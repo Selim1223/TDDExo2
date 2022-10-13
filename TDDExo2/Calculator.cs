@@ -22,11 +22,16 @@
             return firstNumber * secondNumber;
         }
 
-        public  int Divide(int firstNumber, int secondNumber)
+         public int Divide(int firstNumber, int secondNumber)
         {
             if (secondNumber == 0)
-                throw new DivideByZeroException();
+                throw new CustomDivideByZeroException("ne peut pas diviser par 0.");
             return firstNumber / secondNumber;
+        }
+
+        public class CustomDivideByZeroException : Exception
+        {
+            public CustomDivideByZeroException(string message) : base(message) { }
         }
 
     }
