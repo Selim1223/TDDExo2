@@ -1,12 +1,8 @@
 ﻿namespace TDDExo2
 {
-    internal class Calculator
+    public class Calculator
     {
-        public Calculator()
-        {
-        }
-
-
+     
         public  int Add(int firstNumber, int secondNumber)
         {
             return firstNumber + secondNumber;
